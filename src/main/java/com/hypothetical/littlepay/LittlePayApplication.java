@@ -41,7 +41,7 @@ public class LittlePayApplication {
 		System.out.println("Converting Taps to Trips");
 		List<Trip> trips = tripService.tapsToTrips(taps);
 
-		// Write Trips to local file (resources/output/trips.csv)
+		// Write Trips to local file (resources/trips.csv)
 		System.out.println("Exporting Trips into local 'trips.csv' file");
 		tripService.produceTripsCSV(trips);
 		System.out.println("Finished.");

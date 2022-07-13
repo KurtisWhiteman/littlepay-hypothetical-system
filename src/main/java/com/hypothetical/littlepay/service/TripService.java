@@ -167,7 +167,7 @@ public class TripService {
 
     public ByteArrayOutputStream produceTripsCSV(List<Trip> tripList) throws IOException {
         // Get/Create local file to put Trips in
-        String outputFile = "src/main/resources/output/trips.csv";
+        String outputFile = "src/main/resources/trips.csv";
         Path path = Paths.get(outputFile);
         final var csvStream = new ByteArrayOutputStream();
         CSVPrinter csvPrinter;
