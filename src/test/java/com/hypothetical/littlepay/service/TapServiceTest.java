@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = LittlePayApplicationTests.class)
 @ActiveProfiles("test")
-class TapServiceTest {
+public class TapServiceTest {
 
     @Autowired
     private TapService tapService;
