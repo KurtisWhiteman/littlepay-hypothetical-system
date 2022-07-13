@@ -20,11 +20,11 @@ The program takes these rows of data and converts them into Trips (From A to B) 
 
 ### Executing program
 
-* Run MAIN
+* Run 'LittlePayApplication' (Main)
 
 ### Executing tests
 
-* Run Tests
+* Run 'LittlePayApplicationTests'
 
 ### Assumptions
 
