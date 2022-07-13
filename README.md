@@ -1,10 +1,10 @@
-# littlepay-hypothetical-system
+# Littlepay-hypothetical-system
 
-Converts data relating to LittlePay industry
+Converts data relating to Littlepay industry
 
 ## Description
 
-This Hypothetical LittlePay system takes a .csv in an expected format that contains raw data about Tap events. 
+This Hypothetical Littlepay system takes a .csv in an expected format that contains raw data about Tap events. 
 A Tap event is the literal Tapping OR NFC of a Smart Device onto a Terminal to commence or end a Trip on Public Transport.
 The program takes these rows of data and converts them into Trips (From A to B) which will include but are not limited to pricing, duration and status.
 
@@ -21,12 +21,13 @@ The program takes these rows of data and converts them into Trips (From A to B) 
 
 ### Executing program
 
-* Run 'LittlePayApplication' (Main)
+* Run 'LittlepayApplication' (Main)
+* Check resources folder for 'trips.csv'
 
 ### Executing tests
 
-Method 1: Run 'test' via maven
-Method 2: Right-click in Project hierarchy, click "Run 'All Tests'"
+* Method 1: Run 'test' via maven
+* Method 2: Method 2: Right-click in Project hierarchy, click "Run 'All Tests'"
 
 ### Assumptions
 
