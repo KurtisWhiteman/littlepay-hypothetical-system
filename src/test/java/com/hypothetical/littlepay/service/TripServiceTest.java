@@ -1,6 +1,6 @@
 package com.hypothetical.littlepay.service;
 
-import com.hypothetical.littlepay.LittlePayApplicationTests;
+import com.hypothetical.littlepay.LittlepayApplicationTests;
 import com.hypothetical.littlepay.model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +13,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@SpringBootTest(classes = LittlePayApplicationTests.class)
+@SpringBootTest(classes = LittlepayApplicationTests.class)
 @ActiveProfiles("test")
 public class TripServiceTest {
 

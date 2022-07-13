@@ -1,6 +1,6 @@
 package com.hypothetical.littlepay.service;
 
-import com.hypothetical.littlepay.LittlePayApplicationTests;
+import com.hypothetical.littlepay.LittlepayApplicationTests;
 import com.hypothetical.littlepay.model.TapRaw;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
@@ -15,7 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest(classes = LittlePayApplicationTests.class)
+@SpringBootTest(classes = LittlepayApplicationTests.class)
 @ActiveProfiles("test")
 public class TapServiceTest {
 

@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LittlePayApplicationTests {
+public class LittlepayApplicationTests {
 	public static void main(String[] args) {
-		SpringApplication.run(LittlePayApplicationTests.class, args);
+		SpringApplication.run(LittlepayApplicationTests.class, args);
 	}
 }

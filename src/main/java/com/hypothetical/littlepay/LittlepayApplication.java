@@ -10,12 +10,12 @@ import java.io.*;
 import java.util.List;
 
 @SpringBootApplication
-public class LittlePayApplication {
+public class LittlepayApplication {
 
 	private static TapService tapService;
 	private static TripService tripService;
 
-	public LittlePayApplication(TapService tapService, TripService tripService) {
+	public LittlepayApplication(TapService tapService, TripService tripService) {
 		this.tapService = tapService;
 		this.tripService = tripService;
 	}
@@ -27,7 +27,7 @@ public class LittlePayApplication {
 	 *
 	 */
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(LittlePayApplication.class, args);
+		SpringApplication.run(LittlepayApplication.class, args);
 		System.out.println("Application started");
 
 		// Moved filepath in here for better testing purposes
