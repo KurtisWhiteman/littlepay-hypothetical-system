@@ -92,7 +92,6 @@ public class TripService {
 
     /**
      * Determine cost of trip based on stopIds and saved trip fares
-     * Developer tidbit: This would have been a lot cleaner & easier using a database, but it seemed overkill.
      *
      * @param tapsForTrip List of Tap objects
      *
@@ -102,8 +101,8 @@ public class TripService {
 
         List<String> stops = tapsForTrip.stream().map(TapRaw::getStopId).toList();
 
-        // Get local file
-        String filePath = "src/main/resources/cost/stop_fares.csv";
+        // Get local file containing costs between stops
+        String filePath = "src/main/resources/stop_fares.csv";
         Path path = Paths.get(filePath);
         byte[] data = Files.readAllBytes(path);
         List<CSVRecord> records = CSVHelper.recordsFromBytes(data);
@@ -167,7 +166,7 @@ public class TripService {
     }
 
     public ByteArrayOutputStream produceTripsCSV(List<Trip> tripList) throws IOException {
-
+        // Get/Create local file to put Trips in
         String outputFile = "src/main/resources/output/trips.csv";
         Path path = Paths.get(outputFile);
         final var csvStream = new ByteArrayOutputStream();
@@ -194,7 +193,7 @@ public class TripService {
                 csvPrinter.printRecord(createCSVRow(trip));
             }
 
-            // flush the stream
+            // Flush and close the stream
             csvPrinter.flush();
             csvPrinter.close();
 
@@ -218,5 +217,4 @@ public class TripService {
                 Objects.toString(trip.getStatus(), "")
         );
     }
-
 }

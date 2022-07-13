@@ -2,7 +2,6 @@ package com.hypothetical.littlepay.model;
 
 import lombok.Builder;
 import lombok.Data;
-import lombok.experimental.SuperBuilder;
 
 @Data
 @Builder

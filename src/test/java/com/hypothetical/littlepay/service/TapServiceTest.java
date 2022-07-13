@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = LittlePayApplicationTests.class)
 @ActiveProfiles("test")
-public class TapServiceTest {
+class TapServiceTest {
 
     @Autowired
     private TapService tapService;
@@ -41,7 +41,6 @@ public class TapServiceTest {
         List<TapRaw> tapRawRecords = tapService.parseTaps(records);
         assertEquals(4, tapRawRecords.size(),"Expected number of tapRawRecords does not match");
     }
-
 
     @Test
     void ShouldGenerateListOfTapRaw_WhenProvidedSmallCSVRecords() throws IOException {
