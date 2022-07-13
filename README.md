@@ -13,6 +13,7 @@ The program takes these rows of data and converts them into Trips (From A to B) 
 * Java 17
 * SpringBoot
 * Lombok
+* Apache Commons
 
 ### Installing
 
@@ -24,7 +25,8 @@ The program takes these rows of data and converts them into Trips (From A to B) 
 
 ### Executing tests
 
-* Run 'LittlePayApplicationTests'
+Method 1: Run 'test' via maven
+Method 2: Right-click in Project hierarchy, click "Run 'All Tests'"
 
 ### Assumptions
 
